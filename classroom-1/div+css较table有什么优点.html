@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>div+css的布局比较table布局有什么优点?</title>
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/reveal.css">
+    <!-- PPT主题，可以在/css/reveal/theme/中选择其他主题，目前暂时只能使用该模板 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/css/reveal/theme/ptt.css">
+    <!-- syntax highlighting 代码高亮主题 -->
+    <link rel="stylesheet" href="https://ptteng.github.io/PPT/lib/reveal/css/zenburn.css">
+    <style>
+        .float {
+            float: left;
+        }
+    </style>
+    <!-- 打印和PDF输出样式 -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ?
+            'https://ptteng.github.io/PPT/css/reveal/print/pdf.css' : '../css/reveal/print/paper.css';
+    </script>
+</head>
+
+<body>
+
+    <map name="pttmap">
+        <area shape="rect" coords="0,0,276,58" href="http://www.jnshu.com" alt="" target="_blank" />
+    </map>
+    <div class="reveal">
+        <div class="slides"
+            style="width: 960px; height: 700px; left: 50%; top: 50%; bottom: auto; right: auto; transform: translate(-50%, -50%) scale(0.756);">
+            <section style="top: 145.5px; display: block;" class="present">
+                <h2 style="text-transform:none">div+css的布局比较table布局有什么优点?·</h2><br><br>
+                 <h3>分享人：黄俊杰</h3>
+            </section>
+            <section style="top: 264px; display: block;" class="future" hidden="" aria-hidden="true">
+                <ol>
+                    <p>&nbsp;&nbsp; &nbsp;目录</p>
+                    <li>背景介绍</li>
+                    <li>知识剖析</li>
+                    <li>常见问题</li>
+                    <li>解决方案</li>
+                    <li>编码实战</li>
+                    <li>扩展思考</li>
+                    <li>参考文献</li>
+                    <li>更多讨论</li>
+                </ol>
+            </section>
+            <!--1.背景介绍-->
+            <section style="top: 267px; display: block;" class="future" hidden="" aria-hidden="true">
+                <h3>一、背景介绍</h3>
+            </section>
+            <section style="top: 0px; display: none;" class="stack future" data-previous-indexv="0" hidden=""
+                aria-hidden="true">
+                <section style="top: 195px; display: none;" class="" aria-hidden="true">
+                    <div style="text-align: left">
+                        table布局是网页早期布局实现的主要手段，当时的网页构成，相对也比较简单，多是以文本
+                        以及静态图片等组成的，类似于报纸的形式，分区分块显示，table标签的结构表现恰好可以
+                        满足这样的要求。但是随着网页要求的提高和技术的不断探索更迭，尤其是W3C（万维网联
+                        盟）及其他标准组织制定的标准出台后，明确了table标签不是布局工具，使table标签重新回
+                        到其原有的作用上（即仅作为呈现表格化数据的作用），而提倡使用div+css的布局组合。
+                    </div>
+                </section>
+              
+            </section>
+            <!--2.知识剖析-->
+            <section style="top: 267px; display: none;" class="future" hidden="" aria-hidden="true">
+                <h3>二、知识剖析</h3><br>
+                <h4>div+css的布局较table布局有什么优点?</h4>
+            </section>
+            <!--2.1 JS有哪些数据类型？-->
+            <section style="top: 0px; display: none;" class="stack future" data-previous-indexv="0" hidden=""
+                aria-hidden="true">
+                <section style="top: 284px; display: none;" class="" aria-hidden="true"><b>2.1 table布局的优缺点：</b></section>
+               
+                    <section style="top: 261px; display: none;text-align: left;line-height: 2.4rem" class="future" hidden="" aria-hidden="true">
+                        优点：
+                        1.容易上手，简单快速，布置好表格之后，把内容放进去就可以了。<br>
+                        2.表现上更加“严谨”，在不同浏览器中都能得到很好的兼容<br>
+                        3.不用顾及垂直居中的问题，因为元素在表格中就是默认的垂直居中<br><br>
+                        缺点：<br>
+                        1.因为是一体的，不方便更换。<br>
+                        2.标签结构多，复杂，在表格布局中，主要是用到表格的相互嵌套使用，这样就会造成代码的复杂度更高，看起来更乱。<br>
+                        3.还有个表格布局，不利于搜索引擎抓取信息，直接影响到网站的排名。不知道是不是真的，还没接触过搜索引擎。
+                    </section>
+
+                    <section style="top: 261px; display: none;text-align: left" class="future" hidden="" aria-hidden="true">
+                        2.2 div+css布局优缺点：
+                    </section>
+                        <section style="top: 261px; display: none;text-align: left" class="future" hidden="" aria-hidden="true">
+                            优点：<br>
+                            1.符合W3C标准的，结构清晰明了。<br>
+                            2.容易修改，比如修改单个元素块样式。<br>
+                            3.可以比较灵活的布局，能够通过样式选择来实现界面设计方面的更多要求。<br>
+                            4.增加网页打开速度，不像table需要一整块的加载。<br><br>
+                            
+                            缺点：<br>
+                            1.开发技术高，需要兼容各种浏览器，比如有些布局在谷歌上是正常的，到IE浏览器就崩了。<br>
+                            2.CSS样式一般放在外部一个或者几个文件中，如果调用出现异常，有可能牵连到其他模块，导致整个网页崩溃掉。
+                        </section>
+                <section style="top: 261px; display: none; text-align: left" class="future" hidden="" aria-hidden="true">
+                    2.3 div+css的布局较table布局的明显优势<br>
+                    </section>
+
+                <section style="top: 261px; display: none; text-align: left" class="future" hidden="" aria-hidden="true">
+                    1，其实也是div+css布局的第一个特点，table标签被严格地定义为存放数据的一个区域，而不是布局工具，
+                    它的布局形式不符合W3C标准，没有实现结构和表现的分离，它既有css的表现功能，也有html的结构功能。<br>
+                    2，table布局加载网页时，必须整体加载完，降低了网页的呈现速度，而div+css布局是边加载边显示的。<br>
+                    3，table布局在网页代码编写时，有时需要嵌套多重表格才能实现，但使用div+css布局，相对而言会减少许多嵌套时的代码，更容易检查和维护。  <br>                 
+                    4，table布局不方便表现的更换，Table表格布局灵活性不大，你只能遵循 table tr td 的格式。而div你可以 div ul li 。
+                    使用div+css布局，大多只要更改css样式表就能变化表现形式。<br>             
+                    5、易于维护和改版，div+css 结构与表现分离，要是想编版网站，只要修改CSS就可以了，不必对body内的主体内容进行修改。
+                    </section>
+            </section>
+            <!--3.常见问题-->
+            <section style="top: 267px; display: none;" class="future" hidden="" aria-hidden="true">
+                <h3>三、常见问题</h3>
+                怎样使div+css以table的方式呈现出来。
+
+            </section>
+            <!--4.解决方案-->
+            <section style="top: 284px; display: none;" class="future" hidden="" aria-hidden="true">
+                <h3>四、解决方案</h3>
+            </section>
+            
+            <section style="top: 267px; display: none;text-align: left" class="future" hidden="" aria-hidden="true">
+                为div添加对应的样式。<br>
+                table&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{display:table}<br>
+                tr&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;{display:table-row}<br>
+                thead&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;{display:table-header-group}<br>
+                tbody&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{display:table-row-group}<br>
+                tfoot&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{display:table-footer-group}<br>
+                col&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;{display:table-column}<br>
+                colgroup&nbsp;&nbsp; {display:table-column-group}<br>
+                td th&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;{display:table-cell}<br>
+                caption&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;{display:table-caption}
+            </section>
+
+            <!--5.编码实战-->
+            <section style="top: 267px; display: none;" class="future" hidden="" aria-hidden="true">
+                <h3>五.编码实战</h3>
+                <a href="demo.html">div</a>
+                <a href="123.html">table</a>
+            </section>
+
+            <!--6.拓展思考-->
+            <section style="top: 267px; display: none;" class="future" hidden="" aria-hidden="true">
+                <h3>6.拓展思考</h3>
+            </section>
+            <section style="top: 261px; display: none;text-align: left" class="future" hidden="" aria-hidden="true">
+                    什么时候使用div+css的布局，什么时候使用table的布局。
+            </section>
+                  <section style="top: 261px; display: none; text-align: left" class="future" hidden="" aria-hidden="true">
+                        做数据类型表格的时候使用table，其他时候则使用div+css布局。
+            </section>
+            <section style="top: 267px; display: none;" class="future" hidden="" aria-hidden="true">
+                <h3>7.参考文献</h3>
+            </section>
+            <section style="top: 195px; display: none;" class="future" hidden="" aria-hidden="true">
+                <a href="https://www.cnblogs.com/ulex/archive/2010/11/23/1885588.html">表格table和CSS DIV排版模式的优缺点比较(转)</a><br>
+                <a href="https://www.jb51.net/web/175937.html">Table布局的优缺点介绍及为什么不建议使用</a><br>
+                <a href="https://www.cnblogs.com/flyfish919/p/6965129.html">现在主流网站为什么都用div+css布局而不是用table</a><br>
+                <a href="https://www.cnblogs.com/swiftlai/p/7874309.html">div+css的布局较table布局有什么优点？</a><br>
+                <a href="https://www.jianshu.com/p/cc15d92f6e42">郑州分院第6期学员王娇研小课堂</a>
+                </section>
+            <section style="top: 267px; display: none;" class="future" hidden="" aria-hidden="true">
+                <h3>8.更多讨论</h3>
+            </section>
+            <section style="top: 284px; display: none;" class="future" hidden="" aria-hidden="true">
+                两种布局方式结合使用会不会比单DIV布局好
+            </section>
+            <section style="top: 208.5px; display: none;" class="future" hidden="" aria-hidden="true">
+                <h4>鸣谢</h4>
+                <p style="text-align: center">感谢大家观看
+                </p>
+                <p style="text-align: center"><small>BY : 黄俊杰</small>
+                </p>
+            </section>
+        </div>
+    </div>
+    <script src="https://ptteng.github.io/PPT/lib/reveal/js/head.min.js"></script>
+    <script src="https://ptteng.github.io/PPT/lib/reveal/reveal.js"></script>
+    <script>
+        // 以下为常见配置属性的默认值
+        // {
+        //  controls: true, // 是否在右下角展示控制条
+        //  progress: true, // 是否显示演示的进度条
+        //  slideNumber: false, // 是否显示当前幻灯片的页数编号，也可以使用代码slideNumber: 'c / t' ，表示当前页/总页数。
+        //  history: false, // 是否将每个幻灯片改变加入到浏览器的历史记录中去
+        //  keyboard: true, // 是否启用键盘快捷键来导航
+        //  overview: true, // 是否启用幻灯片的概览模式，可使用"Esc"或"o"键来切换概览模式
+        //  center: true, // 是否将幻灯片垂直居中
+        //  touch: true, // 是否在触屏设备上启用触摸滑动切换
+        //  loop: false, // 是否循环演示
+        //  rtl: false, // 是否将演示的方向变成RTL，即从右往左
+        //  fragments: true, // 全局开启和关闭碎片。
+        //  autoSlide: 0, // 两个幻灯片之间自动切换的时间间隔（毫秒），当设置成 0 的时候则禁止自动切换，该值可以被幻灯片上的 ` data-autoslide` 属性覆盖
+        //  transition: 'default', // 切换过渡效果，有none/fade/slide/convex/concave/zoom
+        //  transitionSpeed: 'default', // 过渡速度，default/fast/slow
+        //  mouseWheel: true, //是否启用通过鼠标滚轮来切换幻灯片
+        // }
+        // 初始化幻灯片
+        Reveal.initialize({
+            history: true,
+            dependencies: [{
+                src: 'https://ptteng.github.io/PPT/plugin/markdown/marked.js'
+            },
+            {
+                src: 'https://ptteng.github.io/PPT/plugin/markdown/markdown.js'
+            },
+            {
+                src: 'https://ptteng.github.io/PPT/plugin/notes/notes.js',
+                async: true
+            },
+            {
+                src: 'https://ptteng.github.io/PPT/plugin/highlight/highlight.js',
+                async: true,
+                callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+            ]
+        });
+    </script>
+</body>
+
+</html>

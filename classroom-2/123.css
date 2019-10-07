@@ -1,0 +1,188 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+ 
+
+.a {
+    position: relative;
+    margin: 30px;
+    width: 0px;
+    height: 0;
+    border: 30px solid;
+    border-color: transparent transparent  transparent orange;
+}
+.a1 {
+    position: absolute;
+    top: 30px;
+    left: 25px;
+    width: 0px;
+    height: 0;
+    border: 30px solid;
+    border-color: transparent transparent  transparent #fff;
+}
+
+
+.b {
+    margin: 100px;
+    width: 300px;
+    height: 100px;
+    background-color: tomato;
+    transform:skew(30deg);
+}
+
+
+.sanjiao {
+    position: relative;
+    width: 0px;
+    height: 0;
+    border: 30px solid;
+    border-color: transparent transparent blue transparent ;
+}
+
+
+
+
+.f {
+    margin:100px;
+    transform: rotate(45deg);
+    width: 100px;
+    height: 100px;
+    background-color: royalblue;
+    
+}
+
+.d {
+    position: absolute;
+    left: 0px;
+    top: -49px;
+    width: 100px;
+    height: 50px;
+    background-color: royalblue;
+    border-radius:50px 50px 0 0;
+}
+.e {
+    position: absolute;
+    top:0;
+    left: -49px;
+    width: 50px;
+    height: 100px;
+    background-color: royalblue;
+    border-radius:50px 0 0 50px;
+}
+
+
+
+.taiji {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+}
+.yin,
+.yang {
+    border: 1px solid black;
+    width: 100px;
+    height: 200px;
+}
+
+.yin {
+    background-color: black;
+    border-radius:100px 0 0 100px;
+}
+.yang {
+    border-radius:0 100px 100px 0;
+}
+
+.bai {
+    position: absolute;
+    top: 0;
+    left: 50px;
+    border-radius:50%;
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+}
+.hei {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    border-radius:50%;
+    width: 100px;
+    height: 100px;
+    background-color: black;
+}
+
+.heidian {
+    margin: 37.5px auto;
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    background-color: black;
+}
+.baidian {
+    margin: 37.5px auto;
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    background-color: #fff;
+}
+
+
+
+
+
+#star-five{
+    width: 0;
+    height: 0;
+    color: red;
+    margin: 200px 0;
+    position: relative;
+    display: block;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    -moz-transfrom:rotate(35deg);
+    -webkit-transform:rotate(35deg);
+    -ms-transform:rotate(35deg);
+    -o-transform:rotate(35deg);
+    }
+    
+    
+#star-five:before{
+    width: 0;
+    height: 0;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 80px solid red;
+    position: absolute;
+    top: -45px;
+    left: -65px;
+    color: white;
+    display: block;
+    content: "";
+    -moz-transform:rotate(-35deg);
+    -webkit-transform:rotate(-35deg);
+    -ms-transform:rotate(-35deg);
+    -o-transform:rotate(-35deg); 
+}
+
+#star-five:after {
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    color: red;
+    top: 3px;
+    left: -105px;
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    border-bottom: 70px solid red;
+    content: "";
+    -moz-transform:rotate(-70deg);
+    -webkit-transform:rotate(-70deg);
+    -ms-transform:rotate(-70deg);
+    -o-transform:rotate(-70deg);
+}
+
